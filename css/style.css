@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap'); /*Font type imported*/
+
+
+/*Standard configurations for the style*/
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+
+}
+
+/* Sets the details on the body of the website*/
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+
+/* Sets the behavior of the background of the box that contains the image*/
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+
+}
+/*Sets properties of the pokedex image it selfs*/
+.pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+/*Sets properties of the pokemon image it selfs */
+.pokemon__image{
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;    
+
+}
+/*Sets properties of the text (name and number) of the pokemon on the body of the pokedex image*/
+.pokemon__data{
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(8px, 5vw, 25px);
+
+}
+/*Sets properties of the nome of the pokemon text (number not included)*/
+
+.pokemon__name {
+    color: #3a444d;
+    text-transform: capitalize;
+}
+
+/*Sets properties of the position of the search box*/
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+
+}
+
+/*Sets properties of the search box it self*/
+
+.input__search{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d; 
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+/*Sets the buttons position*/
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+/*Sets buttons style*/
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px 5vw 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px #222, -4px 6px #000;
+    cursor: pointer;
+}
+
+/*On click buttons apperance*/
+.button:active{
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+/*popup configuration*/
+.popup-wrapper{
+    display: none;
+    background: crimson;
+    position:absolute;
+    top: -17vw;
+    left:0vw;
+    width: 100%;
+    height: 100%;
+    outline: 0%;
+
+}
+
+.popup{
+    font-family: 'Oxanium', cursive;
+    text-align: center;
+    width: 100%;
+    min-width: 10%;
+    margin: 10% auto;
+    padding: 10%;
+    background-color: white;
+    position: relative;
+    box-shadow: -2px 3px #222, -4px 6px #000;
+    
+}
+
+.popup a {
+    color: white;
+    padding: 6px 10px;
+    background:white;
+}
+
+.popup-close{
+    position:absolute;
+    top: 5px;
+    right:10px;
+    cursor: pointer;
+
+}
+
+.popup-content{
+    font-family: 'Oxanium', cursive;
+    
+}
